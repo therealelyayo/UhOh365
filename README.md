@@ -36,10 +36,3 @@ If the email does **not** exist:
 
 Notice this request takes zero authentication or identifying parameters and it does not cause a login attempt on the target account.
 
-
-## Author
-Chris King
-
-raikiasec@gmail.com
-
-@raikiasec
