@@ -54,7 +54,7 @@ def thread_worker(args):
                             domain_is_o365[domain] = True
                         else:
                             if args.verbose:
-                                print("It doesn't look like '{}' uses o365".format(domain))
+                                print("It doesn't look like '{}' uses office365".format(domain))
                             domain_is_o365[domain] = False
             r = requests.get('https://outlook.office365.com/autodiscover/autodiscover.json/v1.0/{}?Protocol=Autodiscoverv1'.format(email), headers=headers, verify=args.nossl, allow_redirects=False, proxies=proxies)
             if r.status_code == 200 and "X-MailboxGuid" in r.headers.keys():
@@ -87,8 +87,8 @@ def main():
     print("-----------------------------------------------------------")
     print("|                 UhOh365 Email Validation                 |")
     print("|                                                          |")
-    print("|                      By Chris King                       |")
-    print("|                        @raikiasec                        |")
+    print("|                      By therealelyayo                       |")
+    print("|                        @therealelyayo                        |")
     print("-----------------------------------------------------------")
     requests.packages.urllib3.disable_warnings()
     args = parse_args()
